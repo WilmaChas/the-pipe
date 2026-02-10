@@ -3,7 +3,7 @@
 
 # First Pipeline Challenge
 
-![CI/CD Pipeline](https://github.com/YOUR_USERNAME/first-pipeline/workflows/CI%2FCD%20Pipeline/badge.svg)
+![CI/CD Pipeline](https://github.com/Oshansheru/the-pipe/workflows/CI%2FCD%20Pipeline/badge.svg)
 
 Live deployment: https://the-pipe.onrender.com
 ## About
