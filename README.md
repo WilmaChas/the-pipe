@@ -25,15 +25,25 @@ Every push to the repository now triggers a workflow that installs dependencies,
 # Architecture
 
 Developer Push 
+
 ↓ 
+
 GitHub Repository 
+
 ↓ 
+
 GitHub Actions Workflow 
+
 ↓ 
+
 Install → Test → Docker Build → Trivy Security Scan 
+
 ↓ 
+
 Automatic Deployment 
+
 ↓ 
+
 Live Application
 
 
