@@ -33,7 +33,7 @@ jobs:
 
    # build docker image
       - name: Build Docker image
-        run: docker build -t the-pipe .
+        run: docker build -t the-pipe:${{ github.sha }} .
 
    # list of images
       - name: images list
