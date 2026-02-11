@@ -39,6 +39,22 @@ jobs:
       - name: images list
         run: docker images
 
+   # test docker images     
+      - name: Test Docker image runs
+        run: |
+          docker run -d --name test-container index.js:${{ github.sha }}
+          sleep 5
+          docker ps
+          docker logs test-container
+          docker stop test-container
+
+    # run health check
+      - name: Health check
+        run: |
+         docker run -d -p 3001:3001 --name app index.js:${{ github.sha }}
+         sleep 10
+         curl -f http://localhost:3001/health || exit 0   
+
    # trivy scan
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
