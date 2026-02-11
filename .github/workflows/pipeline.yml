@@ -35,6 +35,10 @@ jobs:
       - name: Build Docker image
         run: docker build -t the-pipe .
 
+   # list of images
+      - name: images list
+        run: docker images
+
    # trivy scan
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
