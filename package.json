@@ -1,5 +1,5 @@
 {
-  "name": "first-pipeline",
+  "name": "the-pipe",
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
