@@ -21,9 +21,4 @@ jobs:
       run: docker images
 
     - name: Test Docker image runs
-      run: |
-        docker run my-app:${{ github.sha }} --entrypoint node ./test.js
-        sleep 5
-        docker ps
-        docker logs test-container
-        docker stop test-container
+      run: docker run --entrypoint node my-app:${{ github.sha }} ./test.js
